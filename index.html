@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Paint Shop</title>
+</head>
+
+<body>
+    <!-- Intro messages -->
+    <span class="gridStartTwo gridSpanTwo">
+        <h1>Paint Shop</h1>
+        <h2>Welcome to the Paint Shop!</h2>
+        <p>This program will help you calculate how many cans of
+            paint you need to buy, based on the
+            dimensions of your
+            room.</p>
+    </span>
+    <!-- Input -->
+    <span class="inputInfo gridStartTwo gridSpanOne">Length of the Room:</span>
+    <span class="inputTab gridStartThree gridSpanOne"><input id="roomLength" type="text"></span>
+    <span class="inputInfo gridStartTwo gridSpanOne">Width of the Room:</span>
+    <span class="inputTab gridStartThree gridSpanOne"><input id="roomWidth" type="text"></span>
+    <span class="inputInfo gridStartTwo gridSpanOne">Height of the Room:</span>
+    <span class="inputTab gridStartThree gridSpanOne"><input id="roomHeight" type="text"></span>
+    <!-- Runing main Function -->
+    <span class="gridStartThree gridSpanOne"><input id="submitButton" type="button" onclick="paintShop()"
+            value="Submit"></span>
+    <!-- Output -->
+    <span class="outputInfo gridStartTwo gridSpanOne">The Total Wall Area: </span>
+    <span id="areaOutput" class="outputTab gridStartThree gridSpanOne"></span>
+    <span class="outputInfo gridStartTwo gridSpanOne">Needed Gallon(s) of Paint: </span>
+    <span id="paintOutput" class="outputTab gridStartThree gridSpanOne"></span>
+    <!-- Footer -->
+    <span id="footerSpan" class="gridStartTwo gridSpanTwo">
+        <footer>Cihan's Paint Shop Exercise - November 2022</footer>
+    </span>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
