@@ -11,34 +11,38 @@
 
 <body>
     <!-- Intro messages -->
-    <span class="gridStartTwo gridSpanTwo">
-        <h1>Paint Shop</h1>
-        <h2>Welcome to the Paint Shop!</h2>
-        <p>This program will help you calculate how many cans of
-            paint you need to buy, based on the
-            dimensions of your
-            room.</p>
-    </span>
+    <h1 class="centeredContainer">Paint Shop</h1>
+    <h2 class="centeredContainer">Welcome to the Paint Shop!</h2>
+    <p class="centeredContainer">This program will help you calculate how many cans of
+        paint you need to buy, based on the
+        dimensions of your
+        room.</p>
     <!-- Input -->
-    <span class="inputInfo gridStartTwo gridSpanOne">Length of the Room:</span>
-    <span class="inputTab gridStartThree gridSpanOne"><input id="roomLength" type="text"></span>
-    <span class="inputInfo gridStartTwo gridSpanOne">Width of the Room:</span>
-    <span class="inputTab gridStartThree gridSpanOne"><input id="roomWidth" type="text"></span>
-    <span class="inputInfo gridStartTwo gridSpanOne">Height of the Room:</span>
-    <span class="inputTab gridStartThree gridSpanOne"><input id="roomHeight" type="text"></span>
+    <Span class="rowTabs centeredContainer">
+        <span class="inputInfo">Area One Can Will Paint (in Per Square):</span>
+        <span class="inputTab"><input id="cansOfPaint" type="text"></span>
+    </Span>
+    <Span class="rowTabs centeredContainer">
+        <span class="inputInfo">Length of the Room:</span>
+        <span class="inputTab"><input id="roomLength" type="text"></span>
+    </Span>
+    <Span class="rowTabs centeredContainer">
+        <span class="inputInfo">Width of the Room:</span>
+        <span class="inputTab"><input id="roomWidth" type="text"></span>
+    </Span>
+    <Span class="rowTabs centeredContainer">
+        <span class="inputInfo">Height of the Room:</span>
+        <span class="inputTab"><input id="roomHeight" type="text"></span>
+    </Span>
     <!-- Runing main Function -->
-    <span class="gridStartThree gridSpanOne"><input id="submitButton" type="button" onclick="paintShop()"
-            value="Submit"></span>
+    <span class="centeredContainer"><input id="submitButton" type="button" onclick="paintShop()" value="Submit"></span>
     <!-- Output -->
-    <span class="outputInfo gridStartTwo gridSpanOne">The Total Wall Area: </span>
-    <span id="areaOutput" class="outputTab gridStartThree gridSpanOne"></span>
-    <span class="outputInfo gridStartTwo gridSpanOne">Needed Gallon(s) of Paint: </span>
-    <span id="paintOutput" class="outputTab gridStartThree gridSpanOne"></span>
+    <span class="outputInfo">The Total Wall Area: </span>
+    <span id="areaOutput" class="outputTab"></span>
+    <span class="outputInfo">Needed Can(s) of Paint: </span>
+    <span id="paintOutput" class="outputTab"></span>
     <!-- Footer -->
-    <span id="footerSpan" class="gridStartTwo gridSpanTwo">
-        <footer>Cihan's Paint Shop Exercise - November 2022</footer>
-    </span>
-
+    <footer class="centeredContainer">Cihan's Paint Shop Exercise - November 2022</footer>
     <script src="index.js"></script>
 </body>
 
